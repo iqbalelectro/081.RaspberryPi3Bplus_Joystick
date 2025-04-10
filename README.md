@@ -25,34 +25,23 @@ Proyek ini menggunakan Raspberry Pi untuk membaca input dari joystick menggunaka
 sudo apt update
 sudo apt upgrade
 
- 
-
 2. **Instal pip dan pustaka yang diperlukan**:
 sudo apt install python3-pip python3-dev
-
- 
 
 3. **Instal pustaka Python yang diperlukan**:
 pip install Adafruit-ADS1x15 RPi.GPIO
 
- 
 
 ## Membuat Virtual Environment
 
 1. **Install `venv` jika belum terinstal**:
 sudo apt install python3-venv
 
- 
-
-2. **Buat virtual environment**:
+2. **Buat virtual environment**: (ketik di folder yang sama)
 python3 -m venv venvJoystick
-
- 
 
 3. **Aktifkan virtual environment**:
 source venvJoystick/bin/activate
-
- 
 
 4. **Instal pustaka dalam virtual environment**:
 pip install Adafruit-ADS1x15 RPi.GPIO
@@ -95,11 +84,10 @@ ADS1115 SCL -> Raspberry Pi SCL (GPIO 3)
 source venvJoystick/bin/activate
 
 2. **Jalankan skrip Python untuk membaca nilai joystick**:
-python joy2.py
-
- 
+python 081.RaspberryPi3Bplus_Joystick.py
 
 3. **Amati output di terminal**: Anda akan melihat nilai sumbu X dan Y serta status tombol joystick.
+
 
 ## Kesimpulan
 
